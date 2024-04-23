@@ -1,0 +1,14 @@
+.c-text {
+    display: inline-block;
+    font-size: 14px;
+    color: #1d2123;
+    font-weight: 400;
+
+    .el-link {
+        line-height: normal;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+
+    }
+}

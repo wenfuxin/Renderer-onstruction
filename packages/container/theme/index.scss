@@ -1,0 +1,353 @@
+ // Path: packages/container/theme/index.scss
+ $prefix : $PREFIX ; // container组件
+ $theme-container-background-color: rgba(#FFF, 1);
+ $theme-container-header-footer-background-color: #FFF;
+ $theme-container-border-inner: 1px solid #CFD7E5;
+ $theme-container-border-outer: 1px solid #011527;
+
+ $theme-multiple-page-control-color: #BFCBD9;
+ $theme-multiple-page-control-color-active: #46A0FC;
+ $theme-multiple-page-control-nav-prev-color: #BFCBD9;
+ $theme-multiple-page-control-nav-next-color: #BFCBD9;
+ $theme-multiple-page-control-border-color: #011527;
+ $theme-multiple-page-control-border-color-active: #FFFFFF;
+ $theme-multiple-page-control-background-color: #212D3D;
+ $theme-multiple-page-control-background-color-active: #FFFFFF;
+
+ 
+
+ // 布局组件
+ .container-component {
+     @extend %full;
+     overflow: hidden;
+
+     // 填充式布局组件
+     .#{$prefix}-container-full {
+         position: absolute;
+         top: 0px;
+         right: 20px;
+         bottom: 0px;
+         left: 0px;
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+
+         .#{$prefix}-container-full__header {
+             padding: 20px;
+         }
+
+         .#{$prefix}-container-full__body {
+             flex-grow: 1;
+             height: 100%;
+             padding: 20px 20px;
+             overflow: auto;
+             position: relative;
+         }
+
+         .#{$prefix}-container-full__footer {
+             padding: 20px;
+         }
+     }
+
+     // 填充式布局组件 - 滚动优化
+     .#{$prefix}-container-full-bs {
+         position: absolute;
+         top: 0px;
+         right: 20px;
+         bottom: 0px;
+         left: 0px;
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+
+         .#{$prefix}-container-full-bs__header {
+             padding: 20px;
+         }
+
+         .#{$prefix}-container-full-bs__body {
+             flex-grow: 1;
+             overflow: hidden;
+             position: relative;
+
+             .#{$prefix}-container-full-bs__body-wrapper-inner {
+                 padding: 20px;
+                 position: relative;
+             }
+         }
+
+         .#{$prefix}-container-full-bs__footer {
+             padding: 20px;
+         }
+     }
+
+     // 隐形布局组件
+     .#{$prefix}-container-ghost {
+         position: absolute;
+         top: 0px;
+         right: 20px;
+         bottom: 0px;
+         left: 0px;
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+
+         .#{$prefix}-container-ghost__header {
+             padding: 20px;
+             border-bottom-left-radius: 4px;
+             border-bottom-right-radius: 4px;
+         }
+
+         .#{$prefix}-container-ghost__body {
+             flex-grow: 1;
+             overflow: auto;
+             position: relative;
+         }
+
+         .#{$prefix}-container-ghost__footer {
+             padding: 20px;
+             border-top-left-radius: 4px;
+             border-top-right-radius: 4px;
+         }
+     }
+
+     // 隐形布局组件 - 滚动优化
+     .#{$prefix}-container-ghost-bs {
+         position: absolute;
+         top: 0px;
+         right: 20px;
+         bottom: 0px;
+         left: 0px;
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+
+         .#{$prefix}-container-ghost-bs__header {
+             padding: 20px;
+             border-bottom-left-radius: 4px;
+             border-bottom-right-radius: 4px;
+         }
+
+         .#{$prefix}-container-ghost-bs__body {
+             flex-grow: 1;
+             overflow: hidden;
+             position: relative;
+         }
+
+         .#{$prefix}-container-ghost-bs__footer {
+             padding: 20px;
+             border-top-left-radius: 4px;
+             border-top-right-radius: 4px;
+         }
+     }
+
+     // 卡片式布局组件
+     .#{$prefix}-container-card {
+         position: absolute;
+         top: 0px;
+         right: 20px;
+         bottom: 0px;
+         left: 0px;
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+
+         .#{$prefix}-container-card__header {
+             padding: 20px;
+         }
+
+         .#{$prefix}-container-card__body {
+             flex-grow: 1;
+             overflow: auto;
+
+             .#{$prefix}-container-card__body-card {
+                 position: relative;
+                 margin-bottom: 20px;
+                 padding: 20px;
+                 border-bottom-left-radius: 4px;
+                 border-bottom-right-radius: 4px;
+             }
+         }
+
+         .#{$prefix}-container-card__footer {
+             padding: 20px;
+             border-top-left-radius: 4px;
+             border-top-right-radius: 4px;
+         }
+     }
+
+     // 卡片式布局组件 - 滚动优化
+     .#{$prefix}-container-card-bs {
+         position: absolute;
+         top: 0px;
+         right: 20px;
+         bottom: 0px;
+         left: 0px;
+         display: flex;
+         flex-direction: column;
+         overflow: hidden;
+
+         .#{$prefix}-container-card-bs__header {
+             padding: 20px;
+         }
+
+         .#{$prefix}-container-card-bs__body {
+             position: relative;
+             flex-grow: 1;
+             overflow: hidden;
+
+             .#{$prefix}-container-card-bs__body-wrapper-inner {
+                 padding-bottom: 20px;
+             }
+
+             .#{$prefix}-container-card-bs__body-card {
+                 position: relative;
+                 padding: 20px;
+                 border-bottom-left-radius: 4px;
+                 border-bottom-right-radius: 4px;
+             }
+         }
+
+         .#{$prefix}-container-card-bs__footer {
+             padding: 20px;
+             border-top-left-radius: 4px;
+             border-top-right-radius: 4px;
+         }
+     }
+ }
+
+ .container-component {
+
+     // [组件]
+     // $prefix-container-full 填充型
+     .#{$prefix}-container-full {
+         border: $theme-container-border-outer;
+         border-top: none;
+         border-bottom: none;
+
+         .#{$prefix}-container-full__header {
+             border-bottom: $theme-container-border-inner;
+             background: $theme-container-header-footer-background-color;
+         }
+
+         .#{$prefix}-container-full__body {
+             background: $theme-container-background-color;
+         }
+
+         .#{$prefix}-container-full__footer {
+             border-top: $theme-container-border-inner;
+             background: $theme-container-header-footer-background-color;
+         }
+     }
+
+     // [组件]
+     // $prefix-container-full-bs 填充型 滚动优化
+     .#{$prefix}-container-full-bs {
+         border: $theme-container-border-outer;
+         border-top: none;
+         border-bottom: none;
+
+         .#{$prefix}-container-full-bs__header {
+             border-bottom: $theme-container-border-inner;
+             background: $theme-container-header-footer-background-color;
+         }
+
+         .#{$prefix}-container-full-bs__body {
+             background: $theme-container-background-color;
+         }
+
+         .#{$prefix}-container-full-bs__footer {
+             border-top: $theme-container-border-inner;
+             background: $theme-container-header-footer-background-color;
+         }
+     }
+
+     // [组件]
+     // $prefix-container-ghost 隐形布局组件
+     .#{$prefix}-container-ghost {
+         .#{$prefix}-container-ghost__header {
+             border-bottom: $theme-container-border-outer;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+
+         .#{$prefix}-container-ghost__footer {
+             border-top: $theme-container-border-outer;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+     }
+
+     // [组件]
+     // $prefix-container-ghost-bs 隐形布局组件 滚动优化
+     .#{$prefix}-container-ghost-bs {
+         .#{$prefix}-container-ghost-bs__header {
+             border-bottom: $theme-container-border-outer;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+
+         .#{$prefix}-container-ghost-bs__footer {
+             border-top: $theme-container-border-outer;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+     }
+
+     // [组件]
+     // $prefix-container-card 卡片型
+     .#{$prefix}-container-card {
+         .#{$prefix}-container-card__header {
+             border-bottom: $theme-container-border-inner;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+
+         .#{$prefix}-container-card__body {
+             .#{$prefix}-container-card__body-card {
+                 background: $theme-container-background-color;
+                 border-left: $theme-container-border-outer;
+                 border-right: $theme-container-border-outer;
+                 border-bottom: $theme-container-border-outer;
+             }
+         }
+
+         .#{$prefix}-container-card__footer {
+             border-top: $theme-container-border-outer;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+     }
+
+     // [组件]
+     // $prefix-container-card-bs 卡片型 滚动优化
+     .#{$prefix}-container-card-bs {
+         .#{$prefix}-container-card-bs__header {
+             border-bottom: $theme-container-border-inner;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+
+         .#{$prefix}-container-card-bs__body {
+             .#{$prefix}-container-card-bs__body-card {
+                 background: $theme-container-background-color;
+                 border-left: $theme-container-border-outer;
+                 border-right: $theme-container-border-outer;
+                 border-bottom: $theme-container-border-outer;
+             }
+         }
+
+         .#{$prefix}-container-card-bs__footer {
+             border-top: $theme-container-border-outer;
+             border-left: $theme-container-border-outer;
+             border-right: $theme-container-border-outer;
+             background: $theme-container-header-footer-background-color;
+         }
+     }
+ }

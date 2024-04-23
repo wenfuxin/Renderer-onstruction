@@ -1,0 +1,18 @@
+{
+    "name": "@saocaozuoya/dog",
+    "version": "0.2.7",
+    "description": "A sample package.json",
+    "private": false,
+    "scripts": {},
+    "main": "lib/index.js",
+    "files": [
+        "README.md",
+        "saocaozuo",
+        "lib"
+    ],
+    "dependencies": {
+        "json-templater": "^1.2.0",
+        "uppercamelcase": "^3.0.0"
+    },
+    "license": "MIT"
+}

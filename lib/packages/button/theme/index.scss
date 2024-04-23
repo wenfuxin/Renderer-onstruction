@@ -1,0 +1,11 @@
+ .c-button-custom {
+     padding: 11px 12px;
+ }
+
+ .el-button {
+    @extend .c-button-custom;
+ }
+
+ .el-button--small {
+     padding: 8px 12px;
+ }

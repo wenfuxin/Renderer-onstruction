@@ -1,0 +1,24 @@
+$THEME: 'default';
+$PREFIX: 'c';
+
+
+
+// 填满父元素
+// 组要父元素 position: relative | absolute;
+%full {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+@import './_colors';
+@import './element-style/theme/index.css';
+@import './font-class/iconfont.css';
+@import '../form/theme/index.scss';
+@import '../form-special/theme/index.scss';
+@import '../text-widget/theme/index.scss';
+@import '../button/theme/index.scss';
+@import '../global-methods/theme/index.scss';
+@import '../container/theme/index.scss';

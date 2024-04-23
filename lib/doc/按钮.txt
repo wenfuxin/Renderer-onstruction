@@ -1,0 +1,64 @@
+// 资源 ---- 按钮（建议绑定code）
+所有空间： allSpace: allSpace
+空间导入: importSpace: importSpace
+新建工作项: createTask: tasklist:task:create（ 工作项列表）, tasktodo:task:create(待办工作项), activesprint:task:create（ 活动的冲刺）, kanban:task:create(看板)
+修改工作项: editTask: tasklist:task:edit（ 工作项列表）, tasktodo:task:edit(待办工作项), activesprint:task:edit（ 活动的冲刺）
+查看工作项: viewTask: tasklist:task:view（ 工作项列表）, tasktodo:task:view(待办工作项), activesprint:task:view（ 活动的冲刺）
+删除工作项: deleteTask: tasklist:task:delete(工作项列表), tasktodo:task:view(待办工作项)， filter:task:complete:delete(筛选器， 我创建的工作项), filter:task:incomplete:delete(筛选器， 我未完成的工作项)， filter:task:all:delete(筛选器， 所有工作项)
+
+新建冲刺： createSprint: kanban:sprint:create(看板), tasktodo:sprint:create(待办工作项)
+修改冲刺： editSprint: kanban:sprint:edit(看板), tasktodo:sprint:edit(待办工作项)
+开始冲刺： startSprint: kanban:sprint:start(看板), tasktodo:sprint:start(待办工作项)
+删除冲刺： deleteSprint: kanban:sprint:delete(看板), tasktodo:sprint:delete(待办工作项)
+完成冲刺： completeSprint: tasktodo:sprint:complete(待办工作项)
+
+
+创建面板： createPanel: activesprint:taskpanel:create(面板设置), taskpanelList:create(本空间中的面板)
+删除面板： deletePanel: activesprint:taskpanel:delete(面板设置)
+面板设置： settingPanel: activesprint:taskpanel:setting(面板设置)
+
+快速筛选： quickFilter: tasklist:quickFilter（ 工作项列表）， tasktodo:quickFilter(待办工作项)， activesprint:quickFilter（ 活动的冲刺）， kanban:quickFilter(看板)
+
+查看冲刺报告: viewReport: sprintReport:view(冲刺报告)
+
+新建筛选器 - 搜索： searchFilter: createFilter:search(新建筛选器)，
+新建筛选器 - 保存为： saveFilter: createFilter:save(新建筛选器)，
+工作项导出： exportFilteredTask: createFilter:export(新建筛选器)，
+查看筛选器： viewFilter: shortcutFilter:incompleteTask:view(我未完成的工作项)， shortcutFilter:completeTask:view(我完成的工作项)， shortcutFilter:allTask:view(所有工作项)，
+编辑筛选器： editFilter: myfilter:edit(编辑筛选器)，
+删除筛选器： deleteFilter: myfilter:delete(删除筛选器)，
+
+
+我的工作 - 周： weekWork: myWork:week
+我的工作 - 月: monthWork: myWork:month
+我的工作 - 记录工时: recordTime: myWork:recordTime
+我的工作 - 修改工时: editTime: myWork:editTime
+我的工作 - 删除工时: deleteTime: myWork:deleteTime
+
+工时统计 - 新建报告： createWorkReport: workReport:create
+工时统计 - 删除报告: deleteWorkReport: workReport:delete
+工时统计 - 查看报告: viewWorkReport: workReport:view
+
+新建团队：createTeam: team:create
+团队设置：settingTeam: team:setting
+删除团队：deleteTeam: team:delete
+
+菜单：
+待办工作项： TaskTodo
+活动的冲刺: ActiveSprint
+冲刺报告: SprintReport
+看板: Kanban
+工作项列表: TaskList
+空间管理: SpaceManage
+
+新建筛选器: CreateNewFilter
+我未完成的工作项 IncompleteTask
+我创建的工作项 MineCreatedTask
+所有工作项 AllTask
+我创建的筛选器 MyCreatedFilter
+更多筛选器 MoreFilter
+
+我的工作 MyWork
+工时统计 WorkReport
+团队管理 TeamList
+配置中心 configs

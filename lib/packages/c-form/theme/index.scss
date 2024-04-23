@@ -1,0 +1,36 @@
+.c-form-widget-container {
+    .el-input-number {
+        width: 100%;
+
+        .el-input__inner {
+            text-align: left;
+        }
+    }
+
+    .block {
+        display: block;
+    }
+
+    .el-select__tags .el-tag.el-tag--info {
+        background-color: #ffff;
+        border-color: #e5e6eb;
+        color: #1d2129;
+    }
+
+
+
+}
+
+.c-select__popper {
+    .el-select-dropdown__item {
+        position: relative;
+        .c-select__option-desc {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+
+        }
+    }
+
+}

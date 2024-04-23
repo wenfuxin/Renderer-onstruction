@@ -1,0 +1,33 @@
+// 去除默认样式
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #333;
+    font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 400;
+    }
+
+}
+
+*:focus {
+    outline: 0 !important;
+    box-shadow: none;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ 

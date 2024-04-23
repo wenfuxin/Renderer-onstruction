@@ -1,0 +1,45 @@
+ $_DIALOG_GUTTER : 24px;
+
+ // 自定义弹框基类
+ .c-dialog-custom {
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 1px;
+
+     .el-dialog__header {
+         padding: $_DIALOG_GUTTER;
+         font-weight: 500;
+     }
+
+     .el-dialog__body {
+         padding: $_DIALOG_GUTTER;
+         font-weight: 400;
+         color: $_PRI_TEXT_COLOR_LBG;
+     }
+
+     .el-dialog__footer {
+         padding: $_DIALOG_GUTTER;
+     }
+ }
+
+ // 提示类弹框
+ .c-dialog-confirm {
+     @extend .c-dialog-custom
+ }
+
+ // 表单类弹框
+ .c-dialog-form {
+     @extend .c-dialog-custom;
+
+     .el-dialog__body {
+         padding: 0 $_DIALOG_GUTTER;
+     }
+
+
+ }
+
+ // 信息类弹框(继承表单类弹框)
+ .c-dialog-info {}
+
+ // 无标题弹框
+ .c-dialog-no-title {}

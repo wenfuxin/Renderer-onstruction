@@ -1,0 +1,28 @@
+@import 'defaultStyles.scss';
+
+.components-demo {
+    //background-color: #fff;
+    padding: 40px 80px;
+    padding-top: 20px;
+
+    .block {
+        margin-bottom: 20px;
+        background-color: #fff;
+        padding: 12px 40px;
+        border-radius: 4px;
+
+        .demonstration {
+            display: inline-block;
+            width: 100%;
+            font-size: 16px;
+            color: #606266;
+            margin-bottom: 10px;
+
+            .value {
+                //color: #409eff;
+                padding-left: 10px;
+                font-size: 14px;
+            }
+        }
+    }
+}
